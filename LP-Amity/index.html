@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amity University - Admissions 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div>
+        <h1>Amity University</h1>
+        <p class="sub">Innovate. Inspire. Succeed — Admissions open 2026</p>
+      </div>
+      <div class="cta-row">
+        <button class="btn" id="feesBtn">Check Course-wise Fees</button>
+        <a class="btn outline" href="#lead">Apply Now</a>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Overview</h2>
+      <p>Amity University is known for its research focus, diverse programs and strong placement support.</p>
+    </section>
+
+    <section class="card small-grid">
+      <div>
+        <h3>Top Courses</h3>
+        <ul>
+          <li>B.Tech (IT)</li>
+          <li>MBA (Finance)</li>
+          <li>BA (Hons)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Placements</h3>
+        <p>Excellent placement network with regular industry interaction.</p>
+      </div>
+    </section>
+
+    <section class="card" id="lead">
+      <h2>Apply / Download Brochure</h2>
+      <p>Fill the form and our admissions team will contact you soon.</p>
+
+      <form id="leadForm">
+        <div class="form-grid">
+          <input name="name" placeholder="Full Name" required>
+          <input name="email" placeholder="Email" type="email" required>
+          <input name="phone" placeholder="Phone (10-digit)" required pattern="\d10">
+          <input name="state" placeholder="State" required>
+          <input name="course" placeholder="Course Interested" required>
+          <input name="year" placeholder="Intake Year" required>
+        </div>
+        <label class="consent"><input type="checkbox" name="consent" required> I consent to be contacted</label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Submit</button>
+          <a class="btn outline" id="downloadBtn" href="#" download="Amity-brochure.pdf">Download Brochure</a>
+        </div>
+        <p id="result" class="result"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" id="closeModal">×</button>
+      <h3>Course-wise Fee Ranges</h3>
+      <div id="feeContent">Loading...</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

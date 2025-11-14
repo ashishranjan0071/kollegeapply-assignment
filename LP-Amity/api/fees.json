@@ -1,0 +1,14 @@
+{
+  "university": "Amity University",
+  "courses": {
+    "B.Tech (IT)": {
+      "range": "2.8L - 4.0L per year"
+    },
+    "MBA": {
+      "range": "3.0L - 6.0L per year"
+    },
+    "BBA": {
+      "range": "1.5L - 2.5L per year"
+    }
+  }
+}
