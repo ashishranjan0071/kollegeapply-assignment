@@ -1,4 +1,4 @@
-const PIPEDREAM_URL = "REPLACE_WITH_YOUR_PIPEDREAM_ENDPOINT_URL";
+const PIPEDREAM_URL = "";
 
 const form = document.getElementById('leadForm');
 const result = document.getElementById('result');
